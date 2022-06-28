@@ -6,9 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tica Tac Toe</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
+    <div class="playerContainer">
+        <div class="playerOne">
+            <h1>Player 1</h1>
+            <div class="playerOneSelections">
+                <button class="player1XSelection playerOneSelection">X</button>
+                <button class="player1OSelection playerOneSelection">o</button>
+            </div>
+        </div>
+        <div class="playerTwo">
+            <h1>Player 2</h1>
+            <div class="playerTwoSelections">
+                <button class="player2XSelection playerTwoSelection">X</button>
+                <button class="player2OSelection playerTwoSelection">o</button>
+            </div>
+        </div>
+    </div>
+    
     <div class="gameGrid">
         <div class="topLeft gridBox"></div>
         <div class="topCenter gridBox"></div>
