@@ -10,37 +10,56 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Roboto+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/979257f9c3.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1 class="header">Tik-Tak-Tow</h1>
-    <div class="playerContainer">
-        <div class="playerOne">
-            <h1>Player 1</h1>
-            <div class="playerOneSelections">
-                <button class="player1XSelection playerOneSelection">X</button>
-                <button class="player1OSelection playerOneSelection">O</button>
+    <div class="test">
+        <h1 class="header">Tik-Tak-Tow</h1>
+        <div class="playerContainer">
+            <div class="playerOne">
+                <h1 class="playersHeading playerOneHeading">Player 1</h1>
+                <div class="nameInputP1">
+                    <input type="text" class="inputP1" name="playerOneName" id="playerOneName" placeholder="Type Player 1 Name">
+                    <button class="playerOneButton material-icons"></button>
+                </div>
+                <div class="playerOneSelections">
+                    <button class="player1XSelection playerOneSelection">X</button>
+                    <button class="player1OSelection playerOneSelection">O</button>
+                </div>
+            </div>
+            <div class="playerTwo">
+                <h1 class="playersHeading playerTwoHeading">Player 2</h1>
+                <div class="nameInputP2">
+                    <input type="text" class="inputP2"name="playerTwoName" id="playerTwoName" placeholder="Type Player 2 Name">
+                    <button class="playerTwoButton"></button>
+                </div>
+                <div class="playerTwoSelections">
+                    <button class="player2XSelection playerTwoSelection">X</button>
+                    <button class="player2OSelection playerTwoSelection">O</button>
+                </div>
             </div>
         </div>
-        <div class="playerTwo">
-            <h1>Player 2</h1>
-            <div class="playerTwoSelections">
-                <button class="player2XSelection playerTwoSelection">X</button>
-                <button class="player2OSelection playerTwoSelection">O</button>
-            </div>
+        
+        <div class="gameGrid">
+            <div class="topLeft gridBox"></div>
+            <div class="topCenter gridBox"></div>
+            <div class="topRight gridBox"></div>
+            <div class="middleLeft gridBox"></div>
+            <div class="middleCenter gridBox"></div>
+            <div class="middleRight gridBox"></div>
+            <div class="bottomLeft gridBox"></div>
+            <div class="bottomCenter gridBox"></div>
+            <div class="bottomRight gridBox"></div>
         </div>
     </div>
-    
-    <div class="gameGrid">
-        <div class="topLeft gridBox"></div>
-        <div class="topCenter gridBox"></div>
-        <div class="topRight gridBox"></div>
-        <div class="middleLeft gridBox"></div>
-        <div class="middleCenter gridBox"></div>
-        <div class="middleRight gridBox"></div>
-        <div class="bottomLeft gridBox"></div>
-        <div class="bottomCenter gridBox"></div>
-        <div class="bottomRight gridBox"></div>
-    </div>
+    <button class="restart-button">Restart</button>
+
     
 </body>
 </html>

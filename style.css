@@ -7,24 +7,36 @@ body{
     justify-content: center;
     margin: 0;
     padding: 0;
+    position: relative;
 }
+
 *{
     margin:0;
     padding: 0;
 }
 
 .gameGrid{
-    border: 5px solid rgb(126, 123, 123);
-    width: 50rem;
-    height: 70%;
+    border: 3px solid rgb(67, 138, 116);
+    width: 43rem;
+    height: 43rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3,1fr);
     color: rgb(194, 178, 178);
-    
+    position: absolute;
+    margin-top: -260px;
 }
 
 .gameGrid > div{
-    border: 1px solid rgb(119, 111, 111);
+    border: 3px solid rgb(67, 138, 116);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 100px;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    color:rgb(8, 21, 26);
 }
 
 .playerContainer{
@@ -35,7 +47,7 @@ body{
     display: flex;
     justify-content: space-around;
     position: relative;
-    gap: 50rem;
+    gap: 80rem;
     color: white;
 }
 
@@ -45,11 +57,14 @@ body{
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    justify-content: center;
+    position: relative;
+    bottom: 17rem;
 }
 
 .playersHeading{
     font-family: 'Roboto Condensed', sans-serif;
-    color: rgb(190, 188, 185);
+    color: rgb(67, 138, 116);
 }
 
 .boxHovered{
@@ -61,11 +76,175 @@ body{
     letter-spacing: 4px;
     font-weight: 500;
     font-size: 60px;
-    color: rgb(67, 138, 116);
+    color: rgb(231, 226, 226);
+    bottom: 22rem;
+    position: relative;
+    text-align: center;
 }
 
 .playerOneSelection,
 .playerTwoSelection{
+    display: flex;
     width: 70px;
     height: 70px;
+    background-color: transparent;
+    border: none;
+    font-size: 6rem;
+    font-family: 'Lato', sans-serif;
 }
+
+.playerOneSelections,
+.playerTwoSelections{
+    display: flex;
+    gap: 10rem;
+    position: absolute;
+    top: 5rem;
+    
+}
+
+.playerOneSelection{
+    color:rgb(231, 226, 226);
+}
+.playerOneSelection:hover{
+    font-size: 9rem;
+    color: rgb(13, 79, 110);
+    
+}
+
+
+.nameInputP1,
+.nameInputP2{
+    position: absolute;
+    top: 40px;
+    display: flex;
+    gap:.2rem;
+    align-items: center;
+
+
+}
+
+.nameInputP2{
+    display: none;
+}
+
+.launch{
+    display: flex;
+}
+
+input{
+    appearance: none;
+    -webkit-appearance: none;
+    height: 2rem;
+    width: 10rem;
+    border-radius: 15px;
+    box-sizing: border-box;
+    border: none;
+    background-color: rgb(67, 138, 116);
+    color: white;
+    padding-left:4px;
+    text-align: center;
+    font-weight: bold;
+    
+   
+}
+
+.playerOneButton,
+.playerTwoButton{
+    height: 1.8rem;
+    width: 1.8rem;
+    border-radius: 90px;
+    background-color: rgb(255, 255, 255);
+    
+    
+    
+
+}
+input::placeholder{
+    color: rgb(68, 66, 66);
+    font-weight: bold;
+}
+
+.playerOneButton::after{
+    font-family: 'Font Awesome 5 Free';
+    content:"\f00c";
+    font-weight: 900;
+    font-size: 16px;
+    color: rgb(19, 40, 46);
+}
+.playerOneButton:hover{
+    background-color: gray;
+}
+
+.playerTwoButton::after{
+    font-family: 'Font Awesome 5 Free';
+    content:"\f00c";
+    font-weight: 900;
+    font-size: 16px;
+    color: rgb(19, 40, 46);
+}
+.playerTwoButton:hover{
+    background-color: gray;
+}
+
+.hide{
+    display: none;
+}
+
+.player-one-marker,
+.player-two-marker{
+    position: absolute;
+    top: 6rem;
+    display: flex;
+    width: 70px;
+    height: 70px;
+    background-color: transparent;
+    border: none;
+    font-size: 6rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.restart-button{
+    height: 4em;
+    width: 12em;
+    position: relative;
+    top: 22rem;
+    border-radius: 15px;
+    background-color: transparent;
+    border:2px solid  rgb(13, 79, 110);
+    color: white;
+    font-weight: bold;
+    letter-spacing: .1rem;
+    font-size: 1rem;
+}
+
+.restart-button:hover{
+    background-color:  rgb(13, 79, 110);
+    cursor: pointer;
+}
+
+.blur { 
+	filter: blur(3px); 
+    opacity: .3;
+} 
+
+.winner-display{
+    height: 200px;
+    width: 900px;
+    filter: blur(0px); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 70px;
+    position: absolute;
+    font-family: 'Lato', sans-serif;
+}
+
+.test{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
