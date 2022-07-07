@@ -20,6 +20,7 @@ body{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     color: rgb(194, 178, 178);
+    
 }
 
 .gameGrid > div{
@@ -27,7 +28,6 @@ body{
 }
 
 .playerContainer{
-    border: 1px solid white;
     width: 100%;
     padding: 0;
     margin: 0;
@@ -35,7 +35,7 @@ body{
     display: flex;
     justify-content: space-around;
     position: relative;
-    bottom: 6rem;
+    gap: 50rem;
     color: white;
 }
 
@@ -44,12 +44,28 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 20px;
 }
 
-.playerTwoSelection{
-    
+.playersHeading{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(190, 188, 185);
 }
 
 .boxHovered{
     background-color: rgb(76, 99, 107);
+}
+
+.header {
+    font-family: 'Titan One', cursive;
+    letter-spacing: 4px;
+    font-weight: 500;
+    font-size: 60px;
+    color: rgb(67, 138, 116);
+}
+
+.playerOneSelection,
+.playerTwoSelection{
+    width: 70px;
+    height: 70px;
 }
